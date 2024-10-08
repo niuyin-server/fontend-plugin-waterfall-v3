@@ -6,6 +6,7 @@ import MouseWheel from '@better-scroll/mouse-wheel'
 import Pullup from '@better-scroll/pull-up'
 import type { BScrollConstructor } from '@better-scroll/core/dist/types/BScroll'
 import { onMounted, ref } from 'vue'
+import Loading from './Loading.vue'
 
 const emits = defineEmits({
   scroll: null,
@@ -96,6 +97,6 @@ defineExpose({
 .loading-text {
   padding: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #b84141;
 }
 </style>

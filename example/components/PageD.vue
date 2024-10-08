@@ -77,7 +77,7 @@ const options = reactive({
   // 唯一key值
   rowKey: 'id',
   // 卡片之间的间隙
-  gutter: 10,
+  gutter: 16,
   // 是否有周围的gutter
   hasAroundGutter: true,
   // 卡片在PC上的宽度
@@ -116,9 +116,9 @@ const options = reactive({
   // 动画效果
   animationEffect: 'animate__fadeInUp',
   // 动画时间
-  animationDuration: 1000,
+  animationDuration: 300,
   // 动画延迟
-  animationDelay: 300,
+  animationDelay: 100,
   // 背景色
   backgroundColor: '#2C2E3A',
   // imgSelector

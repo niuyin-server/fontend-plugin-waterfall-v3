@@ -9,7 +9,7 @@
       <div v-for="(id, index) in list" :key="index" class="tab-page">
         <div v-show="activeIndex === index" class="tab-page-box">
           <WaterfallList
-            :page-size="20" :options="options"
+              :page-size="20" :options="options"
           />
         </div>
       </div>
@@ -18,13 +18,14 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import {reactive, ref} from 'vue'
 import loading from '../assets/loading.png'
 import error from '../assets/error.png'
 import WaterfallList from './WaterfallList.vue'
 
 const activeIndex = ref(0)
 const list = ['1', '2', '3']
+
 function handleTab(index) {
   activeIndex.value = index
 }
@@ -81,7 +82,7 @@ const options = reactive({
 })
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .tab-wrapper {
   width: 400px;
   height: 100vh;
